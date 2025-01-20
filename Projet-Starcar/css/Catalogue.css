@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #272727;
+}
+header{
+    height: 150px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+nav ul li {
+    list-style: none;
+    align-self: center;
+}
+nav ul li img {
+    width: 140px;
+    height: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: #FFD447;
+}
+#utilisateur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD447;
+    border-radius: 75px 50px 75px 50px;
+    width: 100px;
+    height: 50px;
+    margin-left: -40px;
+}
+#utilisateur a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272727;
+}
+/* Partie-header */
+#partie-header {
+    padding: 30px;
+    color: #ffffff;
+    font-family: "Lora", serif;
+    position: relative;
+}
+#Gauche {
+    display: inline-block;
+    vertical-align: middle;
+}
+#Gauche h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0;
+}
+#Gauche p {
+    font-size: 18px;
+    font-style: italic;
+    margin: 5px 0 0;
+}
+#droite {
+    display: inline-block;
+    float: right;
+}
+#partie-header hr {
+    margin-top: 50px;
+    border: none;
+    height: 2px;
+    background-color: #FFD447
+}
+/* Aside */ 
+#filtres {
+    width: 40%;
+    padding: 30px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+#filtres h3 {
+    font-family: 'Lora', serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #FFD447;
+    font-weight: bold;
+    border-bottom: 2px solid #FFD447;
+    padding-bottom: 5px;
+}
+#filtres ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+#filtres ul li {
+    margin-bottom: 15px;
+}
+#filtres ul li label {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+#filtres ul li input[type="checkbox"] {
+    margin-right: 15px;
+}
+#filtres section {
+    margin-bottom: 30px;
+}
+ 
+#filtres section:last-child {
+    margin-bottom: 0;
+}
+main {
+    display: flex;
+    margin-top: 8%;
+}
+/* Offre Voiture */ 
+#Offres {
+    width: 150%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px;
+}
+/* Carte de voiture */
+.offre-voiture {
+    width: calc(30% - 10px);
+    position: relative;
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    transition: transform 0.3s ease;
+}
+.offre-voiture.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    display: none;
+    transition: opacity 0.3s ease, height 0.3s ease, margin 0.3s ease;
+}
+.offre-voiture:hover {
+    transform: scale(1.05);
+}
+.offre-voiture img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: 3;
+}
+.offre-info {
+    position: relative;
+    background-color: #FFD447;
+    width: 100%;
+    padding: 30px;
+    margin-bottom: 40px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+.offre-info p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+}
+.offre-info .btn-plus {
+    background-color: #272727;
+    color: #FFD447;
+    border: none;
+    padding: 10px 40px;
+    border-radius: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.offre-info .btn-plus:hover {
+    background-color: #FFD447;
+    color: #272727;  
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Lora", serif;
+    padding: 40px 0;
+}
+#footer-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+.footer-section h4 {
+    color: #FFD447;
+    margin-bottom: 20px;
+}
+.footer-section p {
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+#logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}  
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}  
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+#logo-reseaux {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+#footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+#footer-bottom hr {
+    border: none;
+    height: 1px;
+    background-color: #FFD447;
+    margin: 10px auto;
+    width: 80%;
+}
+#footer-bottom p {
+    margin-top: 25px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 200px;
+    }
+    nav ul li img {
+        width: 80px;
+        height: 60px;
+    }
+    nav ul li a { 
+        gap: 5px;
+        font-size: 13px;
+        font-style: bold;
+    }
+    #utilisateur {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .offre-voiture {
+        width: calc(50% - 10px);
+    }
+}

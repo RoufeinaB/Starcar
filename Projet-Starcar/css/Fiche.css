@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #272727;
+}
+header{
+    height: 150px;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+nav ul li {
+    list-style: none;
+    align-self: center;
+}
+nav ul li img {
+    width: 140px;
+    height: 70px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: block;
+    font-family: "Lora", serif;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    color: #FFD447;
+}
+#utilisateur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFD447;
+    border-radius: 75px 50px 75px 50px;
+    width: 100px;
+    height: 50px;
+    margin-left: -40px;
+}
+#utilisateur a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #272727;
+}
+
+/* Carte principale */
+#Carte-Voiture {
+    display: flex;
+    align-items: center;
+    background-color: #FFD447;
+    width: 60%;
+    height: 500px;
+    border-radius: 0px 150px 0px 0px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    margin-bottom: 100px;
+}
+#Info-Voiture {
+    padding-left: 40px;
+}
+#Info-Voiture h2 {
+    font-size: 40px;
+    color: #000;
+    margin-bottom: 15px;
+}
+#details {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 50px 0;
+}
+#details li {
+    font-size: 18px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: #000;
+}
+#details li p {
+    font-family: "Lora", serif;
+    margin-left: 10px;
+}
+#Prix-Voiture {
+    margin-left: 400px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+.btn-add-cart {
+    background-color: #272727;
+    color: #FFD447;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-add-cart:hover {
+    background-color: #FFD447;
+    color: #272727;
+}
+#Image-Voiture {
+    position: absolute;
+    margin-right: 15px;
+    margin-left: 55%;
+    margin-top: 10%;
+}
+#Image-Voiture img {
+    width: 250%;
+}
+
+/* Section Option */
+#options-section {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+.titre {
+    background-color: #F5F5F5;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    width: fit-content;
+    margin-bottom: 30px;
+    margin-top: -50px;
+}
+#options ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#options ul li {
+    font-style: "Lora", serif;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #fff;
+}
+/* Section 3D */
+#model-3d{
+    margin: 20px 0;
+    text-align: center;
+    background-color: #272727;
+    margin-bottom: 100px;
+}
+#Titre-centre {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background-color: #F5F5F5;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px
+}
+#model-3d p {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Lora", serif;
+    padding: 40px 0;
+}
+#footer-Top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 50px;
+}
+.footer-section {
+    flex: 1;
+    margin: 0 20px;
+}
+.footer-section h4 {
+    color: #FFD447;
+    margin-bottom: 20px;
+}
+.footer-section p {
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+#logo-footer {
+    width: 150px;
+    margin-bottom: 15px;
+}
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 10px;
+}  
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}  
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+#logo-reseaux {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+#footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    color: #fff;
+}
+#footer-bottom hr {
+    border: none;
+    height: 1px;
+    background-color: #FFD447;
+    margin: 10px auto;
+    width: 80%;
+}
+#footer-bottom p {
+    margin-top: 25px;
+    font-size: 16px;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 100px;
+    }
+    nav ul li img {
+        width: 80px;
+        height: 60px;
+    }
+    nav ul li a { 
+        gap: 5px;
+        font-size: 13px;
+        font-style: bold;
+    }
+    #utilisateur {
+        margin-left: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    #Carte-Voiture {
+        width: 70%;
+        height: 300px;
+    }
+    #Info-Voiture h2 {
+        margin-top: 30px;
+        font-size: 27px;
+    }
+    #details li {
+        font-size: 15px;
+    }
+    #details li svg {
+        width: 20px;
+        height: 20px;
+    }
+    #Prix-Voiture { 
+        margin-left: 200px;
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    .btn-add-cart {
+        margin-bottom: 30px;
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    #options-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    #options ul li {
+        font-size: 18px;
+    }
+    #model-3d p {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+}
